@@ -18,6 +18,8 @@ int main(){
 	s.insert(1);
 	s.insert(2);
 	s.insert(10);           //  {10,8,1,2} => {1,2,8,10}
+	
+	s.erase(10);
 
         // In C++, sets are sorted automatically
 	
