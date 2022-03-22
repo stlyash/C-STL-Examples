@@ -9,7 +9,6 @@ int main(){
 	
 	mp[4]=80;                                           
 	
-	
 	cout<<mp.size()<<endl;   // 3
 	
 //	mp.clear();
@@ -23,7 +22,6 @@ int main(){
 	for(auto it=mp.begin();it!=mp.end();it++)
 	cout<<it->first<<" "<<it->second<<endl;
 	
-	
 	/* problem : Given elements count frequency of each element*/
 	
 	cout<<"Problem solution"<<endl;
@@ -32,13 +30,10 @@ int main(){
 	
 	map<int,int>mpp;                                          
 	for(int i=0;i<given_elements.size();i++)				
+	    mpp[given_elements[i]]++;
 	
-	mpp[given_elements[i]]++;
-	
-	
-		for(auto it=mpp.begin();it!=mpp.end();it++)
-	cout<<it->first<<" "<<it->second<<endl;
-	
+	for(auto it=mpp.begin();it!=mpp.end();it++)
+	    cout<<it->first<<" "<<it->second<<endl;
 	
 	return 0;
 }
