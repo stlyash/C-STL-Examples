@@ -9,23 +9,17 @@ int main(){
 	
 	mp[4]=80;                                           
 	
-	
 	cout<<mp.size()<<endl;   // 3
 	
-//	mp.clear();
+//	mp.clear(); - to make the map empty
 	
 	if(mp.empty())
 	cout<<"Yes"<<endl;
-	
 	else
 	cout<<"No"<<endl;
 	
 	for(auto it=mp.begin();it!=mp.end();it++)
 	cout<<it->first<<" "<<it->second<<endl;
-	
-	
-
-	
 	
 	return 0;
 }
