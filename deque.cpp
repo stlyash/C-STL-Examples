@@ -6,16 +6,17 @@ int main()
     deque<int> d = {2, 3, 4};
     
     d.push_front(1);
-    d.pop_back(9);
+    d.pop_back();
     
     for(int x: d)
-        cout<< x <<" ";
+        cout<< x <<" ";  // 1 2 3
     cout<<endl;
     
     d.push_back(3);
-    d.pop_front(9);
+    d.pop_front();
     
     for(int x: d)
-        cout<< x <<" ";
+        cout<< x <<" ";  // 2 3 3
     cout<<endl;
     
+  }
