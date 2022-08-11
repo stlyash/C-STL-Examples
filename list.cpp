@@ -3,7 +3,7 @@ using namespace std;
 
 int main(){
 
-	// Doubly LL
+	// List in C++ = Doubly Linked List
 	
 	list<int>l3={6,6,4,5,6,8};
 	cout<<l3.front()<<" "<<l3.back()<<endl;   // 4 8
