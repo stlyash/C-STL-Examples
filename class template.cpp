@@ -1,4 +1,4 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
 template<typename T>
@@ -17,14 +17,15 @@ class Pair{
 		return y;
 	}
 };
+
 int main(){
 	
-	Pair<int>p1(3,5);
+	Pair<int> p1(3,5);
 
-	cout<<p1.getfirst()<<" "<<p1.getsecond()<<endl;
+	cout<< p1.getfirst() <<" "<< p1.getsecond() <<endl;  // 3 5
 	
-	Pair<float>p2(3.5,7.8);
-	cout<<p2.getfirst()<<" "<<p2.getsecond()<<endl;
+	Pair<float> p2(3.5,7.8);
+	cout<< p2.getfirst() <<" "<< p2.getsecond() <<endl;  // 3.5 7.8
 	
 	return 0;
 }
