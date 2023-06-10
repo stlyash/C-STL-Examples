@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-
 using namespace std;
 
 int main()
@@ -21,10 +20,13 @@ int main()
     advance(itr, 3);     // iterator pointing to index 3
     cout<< *itr <<endl;  // prints 2
 
-    auto itrnxt = next(itr, 2);  // pointing 2 indices after index 3 (where itr is pointing)
-    auto itrprv = prev(itr, 2);  // pointing 2 indices before index 3 (where itr is pointing)
+    // pointing 2 indices after index 3 (where itr is pointing)
+    auto itrnxt = next(itr, 2);
+
+    // pointing 2 indices before index 3 (where itr is pointing)
+    auto itrprv = prev(itr, 2);  
 
     cout<< *itrnxt <<" "<< *itrprv <<endl;  // 6 4
 }
 
-// Iterators are pointers which are used to point memory addresses of STL containers
+    // Iterators are pointers which are used to point memory addresses of STL containers

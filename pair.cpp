@@ -1,39 +1,38 @@
 #include<bits/stdc++.h>
-
 using namespace std;
 
 int main()
 {
-	// initialization
-	pair<int,int>p1;
-	p1={2,4};
+	// Initialization of pairs
+	pair<int, int> p1; // Default initialization
+	p1 = {2, 4}; // Assigning values to the pair using curly braces
 	
-	pair<int,int>p2(5,8);
+	pair<int, int> p2(5, 8); // Initialization with constructor
 	
-	pair<int,int>p3=p1;
+	pair<int, int> p3 = p1; // Copying the values of p1 into p3
 	
-	pair<float,int>p4=make_pair(3.4,6);
+	// Initialization using make_pair function
+	pair<float, int> p4 = make_pair(3.4, 6); 
 	
-	// accessing the values
-	cout<<p1.first<<" "<<p1.second<<endl;
-	cout<<p2.first<<" "<<p2.second<<endl;
-	cout<<p3.first<<" "<<p3.second<<endl;
-	cout<<p4.first<<" "<<p4.second<<endl;
+	// Accessing the values of pairs
+	cout << p1.first << " " << p1.second << endl; // Output: 2 4
+	cout << p2.first << " " << p2.second << endl; // Output: 5 8
+	cout << p3.first << " " << p3.second << endl; // Output: 2 4
+	cout << p4.first << " " << p4.second << endl; // Output: 3.4 6
 				
 				
-	// pair array 
-	pair<int,int>p5[4];
+	// Pair array
+	pair<int, int> p5[4]; // Declaration of an array of pairs
 
-	for(int i=0;i<4;i++)
+	for (int i = 0; i < 4; i++)
 	{
-		// Taking user input inside the pair array
-		cin>>p5[i].first>>p5[i].second; 
+		// Taking user input for each pair in the array
+		cin >> p5[i].first >> p5[i].second; 
 	}
 	
-	for(int i=0;i<4;i++)
+	for (int i = 0; i < 4; i++)
 	{
-		cout<<p5[i].first<<" "<<p5[i].second<<endl;
+		// Printing the values of each pair in the array
+		cout << p5[i].first << " " << p5[i].second << endl;
 	}
-	
-	
 }

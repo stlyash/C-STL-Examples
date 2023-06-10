@@ -1,18 +1,30 @@
 #include <bits/stdc++.h>
-
 using namespace std;
 
 int main()
 {
-    int arr[9] = {1,4,2,2,5,6,4,2,3}; // array
-    cout << count(arr, arr + 9, 1) <<endl; 
-                // returns number of times 1 is present in the array - arr ,i.e. 1
-    
-    vector<int> v{1,4,2,2,5,6,4,2,3}; // vector
+    int arr[9] = {1, 4, 2, 2, 5, 6, 4, 2, 3}; // array
+
+    // Count the number of occurrences of value 1 in the array 'arr'
+    cout << count(arr, arr + 9, 1) << endl;
+    // Output: 1
+    // Returns the count of occurrences of 1 in the array, which is 1.
+
+//----------------------------------------------------------------------
+
+    vector<int> v{1, 4, 2, 2, 5, 6, 4, 2, 3}; // vector
+
+    // Count the number of occurrences of value 2 in the vector 'v'
     cout << count(v.begin(), v.end(), 2) << endl;
-                // returns number of times 2 is present in the vector - v ,i.e. 3
-    
+    // Output: 3
+    // Returns the count of occurrences of 2 in the vector, which is 3.
+
+//----------------------------------------------------------------------
+
     string s = "C++ STL Examples from github"; // string
+
+    // Count the number of occurrences of character 'm' in the string 's'
     cout << count(s.begin(), s.end(), 'm') << endl;
-                // returns number of times m is present in the string - s ,i.e. 2
+    // Output: 2
+    // Returns the count of occurrences of 'm' in the string, which is 2.
 }
