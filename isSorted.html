@@ -22,6 +22,24 @@ window.onload = function() {
   document.documentElement.style.setProperty("--image-height", imageHeight + "px");
 };
 
+// Get the current zoom level
+var currentZoom = document.documentElement.style.zoom || 1;
+
+// Set the amount to zoom out
+var zoomOutAmount = 0.3; // Adjust the value as needed
+
+// Zoom out the page twice
+for (var i = 0; i < 2; i++) {
+  // Calculate the new zoom level
+  var newZoom = parseFloat(currentZoom) - zoomOutAmount;
+
+  // Apply the new zoom level to the page
+  document.documentElement.style.zoom = newZoom;
+
+  // Update the current zoom level for the next iteration
+  currentZoom = newZoom;
+}
+
     </script>
   </body>
 </html>
