@@ -1,22 +1,189 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Phone Frame Example</title>
-  <style>
-    /* Adjust the size and colors as needed */
-    iframe {
-      width: 300px;
-      height: 600px;
-      border-radius: 30px;
-      position: relative;
-      overflow: hidden;
-    }
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body style="font-family: sans-serif">
+    <header style="display: grid; place-items: center">
+      <span style="margin: 0.25cm; font-size: 2rem">C++ STL Prime</span>
+      <span style="margin-bottom: 3vw">Made with ❤️ in India.</span>
+      <hr style="color: black; margin: none; padding: none" />
+    </header>
 
-  </style>
-</head>
-<body>
+    <main style="display: grid; place-items: center; font-family: sans-serif">
+      <button class="button" onclick="binarysrch()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text"> Binary Search </span>
+      </button>
+      <button class="button" onclick="count()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text"> Count </span>
+      </button>
+      <button class="button" onclick="dqueue()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text"> Deque </span>
+      </button>
+      <button class="button" onclick="forwardList()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text">Forward List</span>
+      </button>
 
-      <iframe src="count.html"></iframe>
+      <button class="button" onclick="isSorted()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text">Is Sorted</span>
+      </button>
 
-</body>
+      <button class="button" onclick="isSorUntil()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text">Is Sorted Until</span>
+      </button>
+
+      <button class="button" onclick="iterators()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text">Iterators</span>
+      </button>
+
+      <button class="button" onclick="list()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text">List</span>
+      </button>
+
+      <button class="button" onclick="map_multimap()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text">Map and Multimap</span>
+      </button>
+
+      <button class="button" onclick="merge()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text">Merge</span>
+      </button>
+
+      <button class="button" onclick="minmax()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text">Min and Max</span>
+      </button>
+
+      <button class="button" onclick="multiset()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text">Multiset</span>
+      </button>
+
+      <button class="button" onclick="pair()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text">Pair</span>
+      </button>
+
+      <button class="button" onclick="parsort()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text">Partial Sort</span>
+      </button>
+
+      <button class="button" onclick="popcount()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text">Popcount</span>
+      </button>
+
+      <button class="button" onclick="queue()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text">Queue</span>
+      </button>
+
+      <button class="button" onclick="rev()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text">Reverse</span>
+      </button>
+
+      <button class="button" onclick="reverseCopy()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text">Reverse Copy</span>
+      </button>
+
+      <button class="button" onclick="rotate()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text">Rotate</span>
+      </button>
+
+      <button class="button" onclick="set()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text">Set</span>
+      </button>
+
+      <button class="button" onclick="sorting()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text">Sorting</span>
+      </button>
+
+      <button class="button" onclick="stack()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text">Stack</span>
+      </button>
+
+      <button class="button" onclick="templateClass()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text">Template Class</span>
+      </button>
+
+      <button class="button" onclick="templateFunction()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text">Template Function</span>
+      </button>
+
+      <button class="button" onclick="unordered_map()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text">Unordered Map</span>
+      </button>
+
+      <button class="button" onclick="unordered_set()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text">Unordered Set</span>
+      </button>
+
+      <button class="button" onclick="vector()">
+        <span class="shadow"></span>
+        <span class="edge"></span>
+        <span class="front text">Vector</span>
+      </button>
+      <a href="https://www.w3grads.com/cpp/online-cpp-compiler">
+        <button class="extra" style="white-space: nowrap; width: max-content">
+          Online C++ Compiler
+        </button></a
+      >
+
+      <button class="extra" onclick="about()">About</button>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
 </html>
